@@ -118,4 +118,16 @@ plt.show()
 
 #prc.domowa
 #zad1
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+t = np.linspace(0, 2*np.pi, 100)
+z = t
+x = np.sin(t)
+y = 2 * np.cos(t)
+ax.plot(x, y, z, label='zad1')
+ax.legend()
+plt.show()
+#zad2
+np.random.seed(19680801)
+def randrange(n, vmin, vmax):
 
